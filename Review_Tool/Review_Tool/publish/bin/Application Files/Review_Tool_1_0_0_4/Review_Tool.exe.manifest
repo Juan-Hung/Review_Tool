@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Review_Tool.exe" version="1.0.0.4" publicKeyToken="079fb98d380811a0" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="reviews.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Review_Tool" version="0.3.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Review_Tool.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC 資訊清單選項
+          若希望變更 Windows 使用者帳戶控制層級，
+          請用下列其中一項取代 requestedExecutionLevel 節點。
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         若希望利用檔案及登錄模擬，提供回溯相容性，
+         則請刪除 requestedExecutionLevel 節點。
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Review_Tool.exe" size="25512">
+      <assemblyIdentity name="Review_Tool" version="0.3.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Qr1ComFkLJ97aBrTxxVhek0cMM47oIkaXYWdaXJAFY8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Review_Tool.exe.config" size="187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xm4bo26HQ0LNVwz1vdPYtzhkpMnp2AI5i+f0b+OahTI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="reviews.ico" size="2462">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>s38P+E4vyfIGzB+1QiRdKJtiJIfyR9oKMD3qN7fd7R0=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=WIH\11202112" issuerKeyHash="7e70c1d8a530c7bb343b32cab4caa7120ce1b19c" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>oOSTursqZZuxXS7+149Fysgl+QlWh4QSHx1eqWWEtMk=</DigestValue></Reference></SignedInfo><SignatureValue>bIw+uHrTeHMD7uBKtmr38zZmqnCb6ma9FOV0Fdwhjo8vn4Niv0nrwJpgB345MKOsLVMGCoCGuzONzbw3nKij1LF0GWIU4RvveTMn0ABe2gfin7SJe6wsA/Hc9mYP6Pf+vu9XaXIqVg8RWRmqXQt0BozPuMHuRllmTxJE/9hJ2Go=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>yvcl7tZLli7CDoqeLt8Nc6XfPDy044F+9k2+3iGtyzgFaIQKz88uSjrehJfxR97UyE1N5ewx+zpE6BdmsIayagLul/g7/+cdBpGK9S6Xa1u82QpmhzGHK1VqvUoRRhy1tvTeRRNNpS27btSc0bRVU4wWXQB1aWmbnNbjjCVTGLk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="c9b48465a95e1d1f1284875609f925c8ca458fd7fe2e5db19b652abbba93e4a0" Description="" Url=""><as:assemblyIdentity name="Review_Tool.exe" version="1.0.0.4" publicKeyToken="079fb98d380811a0" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=WIH\11202112</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>w1uRhxb6+VPti4OmuE84UZL4oPiYWHDzP9q/rwPsdqM=</DigestValue></Reference></SignedInfo><SignatureValue>hMscvBYmpBHCCP1g5i7AHzS1kf0ES2tKtnQHFjjmRKU4xXzoUjbf8TUkknVQ53wNmP6HfCx4gVEeli0NEMYH5kgVSjQtOZz1YMMyDMAZ4vjNFtdi5QDgDNIVl9whQYxd1ofh3i+1rFth7E8aROCkBCa8TrAh7XtAtPsbrl0eiGM=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>yvcl7tZLli7CDoqeLt8Nc6XfPDy044F+9k2+3iGtyzgFaIQKz88uSjrehJfxR97UyE1N5ewx+zpE6BdmsIayagLul/g7/+cdBpGK9S6Xa1u82QpmhzGHK1VqvUoRRhy1tvTeRRNNpS27btSc0bRVU4wWXQB1aWmbnNbjjCVTGLk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIByTCCATKgAwIBAgIQFcEsXwS+MqZLnOsc+We7yzANBgkqhkiG9w0BAQsFADAjMSEwHwYDVQQDHhgAVwBJAEgAXAAxADEAMgAwADIAMQAxADIwHhcNMjQwMTAzMDI1MzI1WhcNMjUwMTAyMDg1MzI1WjAjMSEwHwYDVQQDHhgAVwBJAEgAXAAxADEAMgAwADIAMQAxADIwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMr3Je7WS5Yuwg6Kni7fDXOl3zw8tOOBfvZNvt4hrcs4BWiECs/PLko63oSX8Ufe1MhNTeXsMfs6ROgXZrCGsmoC7pf4O//nHQaRivUul2tbvNkKZocxhytVar1KEUYctbb03kUTTaUtu27UnNG0VVOMFl0AdWlpm5zW44wlUxi5AgMBAAEwDQYJKoZIhvcNAQELBQADgYEALEWFu+hU7o/dZtQ+W+b06Gt050iWNPQD0XxtOetL3f6Y34mh9LmpilYT8bfvtwA/Tybwj0aM+NUyxjBCJjlLfo8m5Zd+mHMMMh9F/zZG6/YaPiyzktQgzzET7+OKc9nhk6NHs4RpiOx+e9nDaYski59Fq2Nje0QgdyRRqBKCRYw=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
